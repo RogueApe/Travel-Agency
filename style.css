@@ -85,9 +85,7 @@ nav ul {
 }
 
 .hero {
-  /* background: linear-gradient(rgb(167, 161, 161), transparent), url(img/kyoto.jpeg);
-   */
-  background: url(img/landing-page.jpg);
+  background: linear-gradient(rgba(241, 226, 194, 0.5), transparent), url(img/landing-page.jpg);
   min-height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
