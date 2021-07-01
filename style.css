@@ -146,18 +146,19 @@ nav ul {
 .destination-head h2 {
   padding: 1rem 0rem;
   text-decoration: underline;
-  background: linear-gradient(#131c27, #e7bf51);
+  /* background: linear-gradient(#131c27, #e7bf51);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .destination-head h3 {
   padding: 4rem 0rem;
   font-size: 2.5rem;
+  /* ONLY WORK IN FIREFOX */
   /* Clip the text with this background color & make the text go transparent */
-  background: linear-gradient(#131c27, #4793e3);
+  /* background: linear-gradient(#131c27, #4793e3);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .cloud {
