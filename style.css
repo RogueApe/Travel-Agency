@@ -136,6 +136,7 @@ nav ul {
   align-items: center;
   position: relative;
   z-index: -2;
+  overflow: hidden; /* fix the bug where cloud will go beyond the blank space on both mobile and desktop browser */
 }
 
 .destination-head {
@@ -229,10 +230,9 @@ nav ul {
 }
 
 /* Media queries goes here */
-/* FOUND AN ISSUE FOR SAMSUNG PHONE AND I FIX HERE */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 760px) {
   .cloud {
-    height: 20rem;
+    height: 30rem;
     right: 0%;
   }
 }
