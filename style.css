@@ -9,6 +9,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 h1 {
   font-size: 2.5rem;
 }
@@ -26,7 +30,9 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
 }
 
 h4,
@@ -41,25 +47,22 @@ a {
 
 button {
   padding: 2rem 6rem;
-  background: #4c6e97;
+  background: #f0b13c;
   border: none;
   color: white;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  font-family: "Yellowtail", cursive;
+  transition: background ease-in-out 0.35s;
 }
 
-.nh-logo {
-  height: 5vh;
-  width: 5vh;
-}
-
-.afford {
-  font-family: cursive;
-  color: rebeccapurple;
+button:hover {
+  background: orangered;
 }
 
 /* Navigation header goes here */
 .main-nav {
-  background: #ffcccc;
+  background: rgb(233, 193, 193);
   color: white;
 }
 
@@ -70,10 +73,13 @@ nav {
   padding: 2rem;
   margin: auto;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #logo {
   flex: 3 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
 }
 
 nav ul {
@@ -84,6 +90,7 @@ nav ul {
   align-items: center;
 }
 
+/* Main content goes here */
 .hero {
   background: linear-gradient(rgba(241, 226, 194, 0.5), transparent), url(img/landing-page.jpg);
   min-height: 90vh;
@@ -101,4 +108,120 @@ nav ul {
 
 .hero h3 {
   padding: 5rem;
+}
+
+/* Span wordings */
+.afford {
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+  font-size: 2rem;
+
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+#logo-2 {
+  font-family: "Pattaya", sans-serif;
+  color: rgb(250, 57, 89);
+  margin-left: 0.5rem;
+}
+
+/* DESTINATION SECTION */
+#destination {
+  min-height: 100vh;
+  background: linear-gradient(rgba(231, 230, 226, 0.5), transparent), url(img/new-york-tour.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: -2;
+}
+
+.destination-head {
+  width: 90%;
+  margin: auto;
+}
+
+.destination-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  background: linear-gradient(#131c27, #e7bf51);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.destination-head h3 {
+  padding: 4rem 0rem;
+  font-size: 2.5rem;
+  /* Clip the text with this background color & make the text go transparent */
+  background: linear-gradient(#131c27, #4793e3);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  animation: cloudAnimation 4s ease-in-out alternate;
+  animation-iteration-count: infinite;
+}
+
+.moving-cloud-1 {
+  z-index: 0;
+}
+
+.moving-cloud-2 {
+  top: 20%;
+  z-index: -1;
+  opacity: 0.75;
+}
+
+/* MAKE THE CLOUD COMING OUT FROM TOP RIGHT */
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* Media queries goes here */
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  #logo {
+    padding: 2rem;
+  }
+
+  .cloud {
+    height: 40rem;
+    /* pointer-events: none; */
+  }
+
+  .moving-cloud-2 {
+    top: 7.5%;
+    opacity: 0.75;
+  }
+
+  .destination-head h2 {
+    font-size: 4rem;
+    background: rgba(19, 28, 39, 0.3);
+    -webkit-text-fill-color: white;
+  }
+
+  .destination-head h3 {
+    font-size: 2.2rem;
+    background: rgba(19, 28, 39, 0.3);
+    -webkit-text-fill-color: white;
+  }
 }
