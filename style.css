@@ -206,6 +206,7 @@ nav ul {
 
   .cloud {
     height: 40rem;
+    right: 0%;
     /* pointer-events: none; */
   }
 
@@ -224,5 +225,14 @@ nav ul {
     font-size: 2.2rem;
     background: rgba(19, 28, 39, 0.3);
     -webkit-text-fill-color: white;
+  }
+}
+
+/* Media queries goes here */
+/* FOUND AN ISSUE FOR SAMSUNG PHONE AND I FIX HERE */
+@media screen and (max-width: 400px) {
+  .cloud {
+    height: 20rem;
+    right: 0%;
   }
 }
