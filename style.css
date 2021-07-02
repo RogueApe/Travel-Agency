@@ -45,7 +45,7 @@ a {
   color: white;
 }
 
-button {
+.btn-book {
   padding: 2rem 6rem;
   background: #f0b13c;
   border: none;
@@ -56,7 +56,7 @@ button {
   transition: background ease-in-out 0.35s;
 }
 
-button:hover {
+.btn-book:hover {
   background: orangered;
 }
 
@@ -228,7 +228,7 @@ nav ul {
 }
 
 /* PACKAGES SECTION */
-.packages {
+#packages {
   background: linear-gradient(rgba(241, 226, 194, 0.5), transparent), url(img/dongdaemun-gu.jpg);
 
   background-repeat: no-repeat;
@@ -308,11 +308,130 @@ nav ul {
   width: 15rem;
 }
 
+/* CONTACT SECTION */
+#contact {
+  min-height: 95vh;
+
+  background: linear-gradient(rgba(241, 226, 194, 0.5), transparent), url(img/dongdaemun.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.3);
+  width: 60%;
+  color: white;
+  border-radius: 2rem;
+}
+
+.form-head {
+  text-align: center;
+}
+
+.name-form,
+.phone-form,
+.email-form {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.form-wrapper label {
+  margin: 0 2rem;
+}
+
+.form-wrapper input {
+  padding: 0.5rem 0.5rem;
+  width: 35%;
+}
+
+/* SUBMIT BUTTON */
+.btn-submit {
+  width: 100%;
+  padding: 1rem;
+  background: #f5443e;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+
+  cursor: pointer;
+  transition: background ease-in-out 0.35s;
+}
+
+.btn-submit:hover {
+  background: royalblue;
+}
+
+/* FOOTER SECTION */
+footer {
+  background: rgb(233, 193, 193);
+}
+
+.footer-wrapper {
+  min-height: 5vh;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer h5 {
+  color: white;
+  margin-left: 3rem;
+
+  font-family: "Pattaya", sans-serif;
+  flex: 1 1 40rem;
+}
+
+footer ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.insta,
+.facebook,
+.linkedin {
+  padding: 3rem;
+}
+
 /* Media queries goes here */
 @media screen and (max-width: 760px) {
   .cloud {
     height: 30rem;
     right: 0%;
+  }
+
+  .form-wrapper {
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer h5 {
+    padding-top: 2rem;
+  }
+
+  .footer-logo {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-evenly;
   }
 }
 
@@ -372,6 +491,22 @@ nav ul {
   .card p {
     padding: 1rem;
   }
+
+  /* FOOTER SECTION */
+  footer {
+    text-align: center;
+  }
+
+  footer h5 {
+    padding-top: 2rem;
+    flex: 1 1 50rem;
+  }
+
+  .footer-logo {
+    display: flex;
+    flex: 1 1 50rem;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -384,5 +519,16 @@ nav ul {
   .moving-cloud-2 {
     top: 12.5%;
     opacity: 0.5;
+  }
+
+  /* FOOTER SECTION */
+  footer {
+    text-align: center;
+  }
+
+  footer h5 {
+    padding-top: 2rem;
+    flex: 1 1 30rem;
+    margin-left: auto;
   }
 }
