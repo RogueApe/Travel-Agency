@@ -283,11 +283,19 @@ nav ul {
 }
 
 .card {
-  box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.2), 0rem 2rem 2rem rgba(0, 0, 0, 0.2);
+  /* Box shadow is causing overflow bug due to overlap background image*/
+  /* box-shadow: 0 10px 45px 0px rgba(159, 155, 155, 0.75);
+  -webkit-box-shadow: 13px 10px 45px 0px rgba(159, 155, 155, 0.75);
+  -moz-box-shadow: 13px 10px 45px 0px rgba(159, 155, 155, 0.75); */
 
   margin: 2rem 5rem;
   flex: 1 1 25rem;
   min-height: 45vh;
+}
+
+.card h4,
+.card p {
+  padding: 1rem;
 }
 
 .card-icon {
@@ -322,6 +330,7 @@ nav ul {
     padding: 2rem;
   }
 
+  /* DESTINATION SECTION */
   .cloud {
     height: 35rem;
     right: 0%;
@@ -353,9 +362,20 @@ nav ul {
     background: rgba(19, 28, 39, 0.3);
     -webkit-text-fill-color: white;
   }
+
+  /* PACKAGES SECTION */
+  .card {
+    margin: 5rem 2rem;
+  }
+
+  .card h4,
+  .card p {
+    padding: 1rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
+  /* DESTINATION SECTION */
   .cloud {
     height: 40rem;
     right: 0%;
