@@ -112,7 +112,6 @@ nav ul {
 
 /* Span wordings */
 .afford {
-  font-family: "ZCOOL QingKe HuangYou", cursive;
   font-size: 2rem;
 
   margin-left: 0.5rem;
@@ -128,13 +127,15 @@ nav ul {
 /* DESTINATION SECTION */
 #destination {
   min-height: 100vh;
-  background: linear-gradient(rgba(231, 230, 226, 0.5), transparent), url(img/new-york-tour.jpeg);
+  background: linear-gradient(rgba(241, 241, 201, 0.5), transparent), url(img/shanghai.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   align-items: center;
   position: relative;
+  font-family: "Pattaya", sans-serif;
+
   z-index: -2;
   overflow: hidden; /* fix the bug where cloud will go beyond the blank space on both mobile and desktop browser */
 }
@@ -147,19 +148,54 @@ nav ul {
 .destination-head h2 {
   padding: 1rem 0rem;
   text-decoration: underline;
-  /* background: linear-gradient(#131c27, #e7bf51);
-  background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
 
 .destination-head h3 {
-  padding: 4rem 0rem;
-  font-size: 2.5rem;
+  padding: 2rem 0rem;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+
   /* ONLY WORK IN FIREFOX */
   /* Clip the text with this background color & make the text go transparent */
   /* background: linear-gradient(#131c27, #4793e3);
   background-clip: text;
   -webkit-text-fill-color: transparent; */
+}
+
+.destination-head p {
+  font-family: "Poppins", sans-serif;
+  padding-top: 2rem;
+}
+
+.china {
+  font-family: "Pattaya", sans-serif;
+
+  background: linear-gradient(to right bottom, #fdcf00, #ee2828);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.korea {
+  font-family: "Pattaya", sans-serif;
+
+  background: linear-gradient(to right, #216bda, rgb(173, 170, 170), #f51414);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.japan {
+  font-family: "Pattaya", sans-serif;
+
+  background: linear-gradient(to right, rgb(0, 0, 0), #ff0101, rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.sea {
+  font-family: "Pattaya", sans-serif;
+  background: linear-gradient(to right, #645106, rgb(17, 146, 5), #f0600d);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .cloud {
@@ -191,6 +227,87 @@ nav ul {
   }
 }
 
+/* PACKAGES SECTION */
+.packages {
+  background: linear-gradient(rgba(241, 226, 194, 0.5), transparent), url(img/dongdaemun-gu.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.packages-head {
+  padding: 3rem;
+  min-height: 20vh;
+  background: rgb(233, 193, 193);
+  color: white;
+
+  font-family: "Pattaya", sans-serif;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.packages-head h3 {
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+}
+
+.card-group {
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+  min-height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* MOBILE RESPONSIVE */
+  flex-wrap: wrap;
+}
+
+.card-group h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  padding: 2rem 2rem;
+  background: white;
+}
+
+.card-group p {
+  font-size: 1.35rem;
+  font-family: "Poppins", sans-serif;
+  padding: 2rem 2rem;
+  background: white;
+}
+
+.card {
+  box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.2), 0rem 2rem 2rem rgba(0, 0, 0, 0.2);
+
+  margin: 2rem 5rem;
+  flex: 1 1 25rem;
+  min-height: 45vh;
+}
+
+.card-icon {
+  background: rgb(233, 193, 193);
+}
+
+.card img {
+  padding: 1.5rem 1.5rem;
+  height: 15rem;
+  width: 15rem;
+}
+
+/* Media queries goes here */
+@media screen and (max-width: 760px) {
+  .cloud {
+    height: 30rem;
+    right: 0%;
+  }
+}
+
 /* Media queries goes here */
 @media screen and (max-width: 932px) {
   html {
@@ -206,7 +323,7 @@ nav ul {
   }
 
   .cloud {
-    height: 40rem;
+    height: 35rem;
     right: 0%;
     /* pointer-events: none; */
   }
@@ -218,21 +335,34 @@ nav ul {
 
   .destination-head h2 {
     font-size: 4rem;
+    padding: 2rem;
     background: rgba(19, 28, 39, 0.3);
     -webkit-text-fill-color: white;
   }
 
   .destination-head h3 {
     font-size: 2.2rem;
+    padding: 2rem;
+    background: rgba(19, 28, 39, 0.3);
+    -webkit-text-fill-color: white;
+  }
+
+  .destination-head p {
+    font-size: 2.2rem;
+    padding: 2rem;
     background: rgba(19, 28, 39, 0.3);
     -webkit-text-fill-color: white;
   }
 }
 
-/* Media queries goes here */
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1200px) {
   .cloud {
-    height: 30rem;
+    height: 40rem;
     right: 0%;
+  }
+
+  .moving-cloud-2 {
+    top: 12.5%;
+    opacity: 0.5;
   }
 }
