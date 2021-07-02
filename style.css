@@ -63,7 +63,11 @@ a {
 /* Navigation header goes here */
 .main-nav {
   background: rgb(233, 193, 193);
+
   color: white;
+
+  position: sticky;
+  top: 0;
 }
 
 nav {
@@ -239,7 +243,7 @@ nav ul {
 .packages-head {
   padding: 3rem;
   min-height: 20vh;
-  background: rgb(233, 193, 193);
+  background: rgb(93, 226, 250);
   color: white;
 
   font-family: "Pattaya", sans-serif;
@@ -299,7 +303,14 @@ nav ul {
 }
 
 .card-icon {
-  background: rgb(233, 193, 193);
+  background: rgb(243, 135, 96);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.card p {
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
 .card img {
@@ -312,7 +323,7 @@ nav ul {
 #contact {
   min-height: 95vh;
 
-  background: linear-gradient(rgba(241, 226, 194, 0.5), transparent), url(img/dongdaemun.jpg);
+  background: linear-gradient(rgba(241, 226, 194, 0.5), transparent), url(img/pg-island.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -320,6 +331,15 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+form,
+.form-head {
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+}
+
+form label {
+  font-size: 2.5rem;
 }
 
 .form-wrapper {
@@ -353,7 +373,8 @@ nav ul {
 .btn-submit {
   width: 100%;
   padding: 1rem;
-  background: #f5443e;
+  background: #1385e2;
+
   border: none;
   color: white;
   font-size: 2.5rem;
